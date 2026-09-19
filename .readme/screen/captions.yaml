@@ -1,0 +1,15 @@
+01-overview.png:
+  en: "A game in progress on a Zabbix dashboard: level 5 of 50, moves and crates counted."
+  cs: "Rozehraná hra na Zabbix dashboardu: úroveň 5 z 50, počítadlo tahů a beden."
+02-play.png:
+  en: "Play with the arrow keys or the on-screen pad; the level bar and the game buttons stay on one row."
+  cs: "Hrajte šipkami na klávesnici nebo tlačítky na obrazovce; lišta úrovní a herní tlačítka zůstávají v jednom řádku."
+03-solved.png:
+  en: "Level solved: the server replayed every move, recorded your best and issued your personal code for the next level."
+  cs: "Úroveň vyřešena: server přehrál každý tah, uložil váš rekord a vystavil osobní kód k další úrovni."
+04-hall.png:
+  en: "Hall of Fame: your best result on every level - fewest moves, then fastest time - kept in the Zabbix database."
+  cs: "Síň slávy: váš nejlepší výsledek v každé úrovni - nejméně tahů, poté nejrychlejší čas - uložený v databázi Zabbixu."
+06-settings.png:
+  en: "Nothing to configure - name the widget and play."
+  cs: "Nic se nenastavuje - widget stačí pojmenovat a hrát."
