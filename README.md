@@ -100,9 +100,9 @@ Unusually fast input triggers a “Please don’t cheat” warning. The flagged 
 
 ## Install
 
-sokobanMAX builds into the same GPG-signed `deb` / `rpm` package as every initMAX widget, and **one package covers Zabbix 6.0 to 8.0**: it carries both module trees, the installer picks the one your frontend can load, and an in-place Zabbix upgrade keeps working without a reinstall.
+sokobanMAX ships as GPG-signed `deb` / `rpm` packages for native installations and RSA-signed Alpine `apk` packages for Docker frontends. For native installations, **one package covers Zabbix 6.0 to 8.0**: it carries both module trees, the installer picks the one your frontend can load, and an in-place Zabbix upgrade keeps working without a reinstall.
 
-Running the Zabbix frontend in Docker? The same repository serves an Alpine (`apk`) package, and the **Docker** tab of the Portal installer writes the Dockerfile block for your edition.
+Running the Zabbix frontend in Docker? The **Docker** tab of the Portal installer prepares the Dockerfile block and build command for your edition. Alpine APK is the recommended method; DEB/RPM are also available for matching base images, or use a manual ZIP installation in a persistent volume. For package updates, rebuild your frontend image and recreate the container.
 
 **Easiest way - the guided installer on the Portal:** **[portal.initmax.com/catalog/zabbix-sokobanmax](https://portal.initmax.com/catalog/zabbix-sokobanmax#how-to-install)** shows the exact commands for your operating system.
 
@@ -142,7 +142,7 @@ Every shipped level carries a stored solution that the test suite replays on eve
 | ------------ | ------------------------------------------------------------ |
 | **Zabbix**   | 6.0 · 6.2 · 6.4 · 7.0 · 7.2 · 7.4 · 8.0 - one package covers all |
 | **PHP**      | 7.4 or newer                                                 |
-| **OS**       | Debian/Ubuntu · RHEL/Rocky/Alma/Oracle/Amazon · SUSE         |
+| **OS**       | Debian/Ubuntu · RHEL/Rocky/Alma/Oracle/Amazon · SUSE; Alpine APK for Docker frontends |
 | **Editions** | FREE only - there is no PRO edition                          |
 | **Languages** | All 27 Zabbix display languages - the widget follows each user's own language setting |
 | **High availability** | Ready. Saved games and records live in the shared Zabbix database. Install the widget on every frontend node; no separate game server is needed |
