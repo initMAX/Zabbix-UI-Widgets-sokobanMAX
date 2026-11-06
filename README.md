@@ -102,6 +102,8 @@ Unusually fast input triggers a “Please don’t cheat” warning. The flagged 
 
 sokobanMAX builds into the same GPG-signed `deb` / `rpm` package as every initMAX widget, and **one package covers Zabbix 6.0 to 8.0**: it carries both module trees, the installer picks the one your frontend can load, and an in-place Zabbix upgrade keeps working without a reinstall.
 
+Running the Zabbix frontend in Docker? The same repository serves an Alpine (`apk`) package, and the **Docker** tab of the Portal installer writes the Dockerfile block for your edition.
+
 **Easiest way - the guided installer on the Portal:** **[portal.initmax.com/catalog/zabbix-sokobanmax](https://portal.initmax.com/catalog/zabbix-sokobanmax#how-to-install)** shows the exact commands for your operating system.
 
 **Coming from the older Sokoban widget?** Nothing to do. The package removes the old module, and the first time someone signs in, every `Sokoban` widget already on your dashboards becomes a sokobanMAX widget in place - same dashboard, same position.
